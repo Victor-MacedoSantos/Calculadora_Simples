@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="teclado" name="teclado">
+
+        <form name="form" class="form">
+            <tr>
+                <td colspan="4"><input disabled name="display" id="display" value="" type="text"></td>
+            </tr>
+        </form>
+
+        <table name="calc">
+            <tr>
+                <td colspan="2"><input type="button" class="btn" value="CE" id="btn-ce" onclick="apagarTudo()"></td>
+                <td><input type="button" class="btn" value="C" onclick="apagar()"></td>
+                <td><input type="button" class="btn" value="/" onclick="inserirValor('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn" value="7" onclick="inserirValor(7)"></td>
+                <td><input type="button" class="btn" value="8" onclick="inserirValor(8)"></td>
+                <td><input type="button" class="btn" value="9" onclick="inserirValor(9)"></td>
+                <td><input type="button" class="btn" value="X" onclick="inserirValor('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn" value="4" onclick="inserirValor(4)"></td>
+                <td><input type="button" class="btn" value="5" onclick="inserirValor(5)"></td>
+                <td><input type="button" class="btn" value="6" onclick="inserirValor(6)"></td>
+                <td><input type="button" class="btn" value="-" onclick="inserirValor('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn" value="1" onclick="inserirValor(1)"></td>
+                <td><input type="button" class="btn" value="2" onclick="inserirValor(2)"></td>
+                <td><input type="button" class="btn" value="3" onclick="inserirValor(3)"></td>
+                <td><input type="button" class="btn" value="+" onclick="inserirValor('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn" value="." onclick="inserirValor('.')"></td>
+                <td colspan="2"><input type="button" class="btn" value="0" id="btn-zero" onclick="inserirValor(0)"></td>
+                <td><input type="button" class="btn equal" value="=" onclick="equal()"></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
